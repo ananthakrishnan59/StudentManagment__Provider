@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:student_management_provider/Core/constants.dart';
 
-class TextFormFieldWidget
- extends StatelessWidget {
-  const TextFormFieldWidget
-  ({super.key, required this.controller,
+class TextFormFieldWidget extends StatelessWidget {
+  const TextFormFieldWidget({
+    super.key,
+    required this.controller,
     this.inputType,
     this.hintText,
     this.labelText,
     this.prefixicon,
     this.maxLength,
     this.validator,
-    this.onChanged,});
-final TextEditingController controller;
+    this.onChanged,
+  });
+  final TextEditingController controller;
   final TextInputType? inputType;
   final String? hintText;
   final String? labelText;
@@ -26,17 +28,17 @@ final TextEditingController controller;
       validator: validator,
       maxLength: maxLength,
       decoration: InputDecoration(
-        filled: true,
-        fillColor: const Color.fromARGB(255, 245, 241, 241),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(20),
-          borderSide: const BorderSide(style: BorderStyle.none)
-        ),
-        hintText: hintText,
-        labelText: labelText,prefixIcon: Icon(prefixicon)
-      ),
+          filled: true,
+          fillColor: const Color.fromARGB(255, 245, 241, 241),
+          border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(20),
+              borderSide: const BorderSide(style: BorderStyle.none)),
+          hintText: hintText,
+          labelText: labelText,
+          prefixIcon: Icon(prefixicon)),
       controller: controller,
       keyboardType: inputType,
     );
+    
   }
 }

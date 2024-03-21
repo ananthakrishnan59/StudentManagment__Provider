@@ -79,7 +79,7 @@ class AddStudentScreen extends StatelessWidget {
                         labelText: 'Name',
                         inputType: TextInputType.name,
                       ),
-                      constants().kWidth10,
+                         constants().kheight10,
                       TextFormFieldWidget(
                         validator: (value) {
                           if (value == null ||
@@ -96,7 +96,7 @@ class AddStudentScreen extends StatelessWidget {
                         labelText: 'Age',
                         inputType: TextInputType.number,
                       ),
-                       constants().kWidth10,
+                       constants().kheight10,
                       TextFormFieldWidget(
                           validator: (value) {
                             if (value == null ||
@@ -111,7 +111,7 @@ class AddStudentScreen extends StatelessWidget {
                           hintText: 'Enter the department',
                           labelText: 'Department',
                           inputType: TextInputType.text),
-                             constants().kWidth10,
+                               constants().kheight10,
                       TextFormFieldWidget(
                         validator: (value) {
                           if (value == null ||
@@ -127,7 +127,7 @@ class AddStudentScreen extends StatelessWidget {
                         labelText: 'Place',
                         inputType: TextInputType.text,
                       ),
-                         constants().kWidth10,
+                           constants().kheight10,
                       TextFormFieldWidget(
                         validator: (value) {
                           if (value == null ||
@@ -143,7 +143,7 @@ class AddStudentScreen extends StatelessWidget {
                         labelText: 'Contact Number',
                         inputType: TextInputType.number,
                       ),
-                         constants().kWidth10,
+                         constants().kheight10,
                       TextFormFieldWidget(
                         validator: (value) {
                           if (value == null ||
